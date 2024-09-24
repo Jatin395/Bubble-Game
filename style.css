@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    background-color: yellowgreen;
+}
+.main{
+    width: 80%;
+    height: 80vh;
+    overflow: hidden;
+    border-radius: 30px;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+.mtop{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(110, 160, 12);
+}
+h2{
+    margin: 2px;
+    display: inline-block;
+}
+.hit{
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 50px;
+    background-color: white;
+}
+.timer{
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 50px;
+    background-color: white;
+}
+.point{
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 50px;
+    background-color: white;
+}
+.mbotm{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    /* overflow: auto; */
+    padding: 12px;    
+    flex-wrap: wrap;
+    background-color: antiquewhite;
+}
+.bubble{
+    width: 35px;
+    height: 35px;
+    color: white;
+    padding-top: 4px;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(137, 192, 26);
+}
+.bubble:hover{
+    background-color: rgb(66, 95, 7);
+}
+
+.cur{
+    width: 38px;
+    height: 38px;
+    border-radius: 50px;
+    background-color: white;
+    position: fixed;
+    transition: all;
+    transition-duration: 0.2s;
+    mix-blend-mode: difference;
+}
+
+.score{
+    position: relative;
+    top: -60px;
+    left: 60px;    
+}
+
+.rebtn{
+    width: 120px;
+    height: 40px;
+    color: white;
+    border-radius: 50px;
+    position: relative;
+    top: 60px;
+    left: -90px;    
+    font-size: 18px;
+    border: 0;
+    background-color: rgb(137, 192, 26);
+}
+.rebtn:hover{
+    background-color: rgb(110, 160, 12);
+}
+
+@media (max-width:440px) {    
+    h2{
+        font-size: 16px;
+    }
+}
